@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/* 
+ * The code assignsn a random number to n 
+ * Everytime the code is run ; the random number is printed out; and wether it is negative or positive is also printed out
+ * The main function returns zero
+ * */
 int main(void)
 {
 	int n;
