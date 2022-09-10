@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /* 
- * main - function assigns a random number to int n
- * Everytime the code is run ;
- * the random number is printed out;
- * and wether it is negative or positive is also printed out
- * The main function returns zero
+ * main - assigns a random number to int n
+ * when the code is run, it prints out the number
+ * Return: 0 (success)
  */
 int main(void)
 {
