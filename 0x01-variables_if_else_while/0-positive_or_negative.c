@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/* 
+/**
  * main - assigns a random number to int n
  * when the code is run, it prints out the number
- * Return: 0 (success)
+ * Return: 0 (success) 
  */
 int main(void)
 {
