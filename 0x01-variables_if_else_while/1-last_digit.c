@@ -4,7 +4,7 @@
 
 /*
  * main - prints the last digit of the random number
- * random number is stored in variable n
+ * stored in variable n
  * Return: 0(success)
  */
 int main(void)
