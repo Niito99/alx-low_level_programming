@@ -10,10 +10,10 @@ int main(void)
 {
 	int dig;
 
-	for (dig = 0; dig <=9; dig++)
-		putchar(dig);
+	for (dig = 0; dig <= 9; dig++)
+		printf("%d", dig);
 
-	putchar('\n');
+	printf("\n");
 
 
 	return (0);
