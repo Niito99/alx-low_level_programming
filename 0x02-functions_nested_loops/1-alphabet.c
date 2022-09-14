@@ -17,6 +17,4 @@ void print_alphabet(void)
 	}
 
 	write(1, "\n", 1);
-
-	return;
 }
