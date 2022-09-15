@@ -32,14 +32,14 @@ int main(void)
 	{
 		while (next < 4000000)
 		{
-			term1 = term2;
-			term2 = next;
-			next = term1 + term2;
 
 			if (next % 2 == 0)
 			{
 				sum += next;
 			}
+			term1 = term2;
+			term2 = next;
+			next = term1 + term2;
 		}
 		
 	
