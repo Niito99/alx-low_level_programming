@@ -41,9 +41,7 @@ int main(void)
 			term2 = next;
 			next = term1 + term2;
 		}
-		
-	
-	}
+	}	
 	printf("%i\n", sum);
 	return (0);
 }
