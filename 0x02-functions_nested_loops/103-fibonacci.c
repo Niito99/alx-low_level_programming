@@ -12,7 +12,6 @@ int main(void)
 	int n;
 
 	scanf("%d", &n);
-	int i = 0;
 	long term1 = 1;
 	long term2 = 2;
 	long next = term1 + term2;
