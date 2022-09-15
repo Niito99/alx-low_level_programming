@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int times_table(void)
+void times_table(void)
 {
 	int n = 0;
 	int num;
@@ -15,7 +15,7 @@ int times_table(void)
 	for (num = 0; num <= 9; num++)
 	{
 		int x = num * n;
-		return (x);
+		write(1, x);
 		_putchar(',');
 	}
 	n++;
