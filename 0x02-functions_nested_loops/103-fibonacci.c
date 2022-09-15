@@ -19,12 +19,14 @@ int main(void)
 
 	int next;
 
+	int sum;
+
 	scanf("%d", &n);
 	term1 = 1;
 	term2 = 2;
 	next = term1 + term2;
 
-	int sum = 0;
+	sum = 0;
 
 	for (i = 0; i <= n; n++)
 	{
