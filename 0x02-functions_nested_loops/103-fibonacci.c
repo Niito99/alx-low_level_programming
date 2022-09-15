@@ -12,7 +12,7 @@ int main(void)
 	int n;
 
 	scanf("%d", &n);
-	long i = 0;
+	int i = 0;
 	long term1 = 1;
 	long term2 = 2;
 	long next = term1 + term2;
