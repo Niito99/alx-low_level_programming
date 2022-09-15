@@ -30,15 +30,20 @@ int main(void)
 
 	for (i = 0; i <= n; n++)
 	{
-		if (next % 2 == 0)
+		while (next < 4000000)
 		{
-			sum += next;
+			term1 = term2;
+			term2 = next;
+			next = term1 + term2;
+
+			if (next % 2 == 0)
+			{
+				sum += next;
+			}
 		}
-		term1 = term2;
-		term2 = next;
-		next = term1 + term2;
+		
 		printf("%d", sum);
 
 	}
-	return (sum);
+	return (0);
 }
