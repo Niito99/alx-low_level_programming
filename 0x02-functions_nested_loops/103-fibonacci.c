@@ -11,12 +11,14 @@ int main(void)
 {
 	int n;
 
-	scanf("%d", &n);
-	long term1 = 1;
-	long term2 = 2;
-	long next = term1 + term2;
+	int i;
 
-	long int sum = 0;
+	scanf("%d", &n);
+	int term1 = 1;
+	int term2 = 2;
+	int next = term1 + term2;
+
+	int sum = 0;
 
 	for (i = 0; i <= n; n++)
 	{
