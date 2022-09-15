@@ -24,7 +24,7 @@ int main(void)
 	scanf("%d", &n);
 	term1 = 1;
 	term2 = 2;
-	next = term1 + term2;
+	next = 0;
 
 	sum = 0;
 
