@@ -42,8 +42,8 @@ int main(void)
 			}
 		}
 		
-		printf("%d", sum);
-
+	
 	}
+	printf("%i\n", sum);
 	return (0);
 }
