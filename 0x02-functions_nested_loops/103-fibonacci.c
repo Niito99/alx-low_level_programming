@@ -13,10 +13,16 @@ int main(void)
 
 	int i;
 
+	int term1;
+
+	int term2;
+
+	int next;
+
 	scanf("%d", &n);
-	int term1 = 1;
-	int term2 = 2;
-	int next = term1 + term2;
+	term1 = 1;
+	term2 = 2;
+	next = term1 + term2;
 
 	int sum = 0;
 
@@ -29,7 +35,7 @@ int main(void)
 		term1 = term2;
 		term2 = next;
 		next = term1 + term2;
-		printf("%ld", sum);
+		printf("%d", sum);
 
 	}
 	return (sum);
