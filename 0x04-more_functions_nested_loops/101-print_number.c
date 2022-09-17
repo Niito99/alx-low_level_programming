@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 void print_prev_digits(int n);
