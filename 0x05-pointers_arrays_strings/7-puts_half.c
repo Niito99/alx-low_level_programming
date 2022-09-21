@@ -18,12 +18,11 @@ void puts_half(char *str)
 		j++;
 		i++;
 	}
-	j--;
 
 	if (j % 2 == 0)
 	{
 		len = j / 2;
-		for (k = len; k < j; k++)
+		for (k = len; k < j - 1; k++)
 		{
 			_putchar(str[k]);
 		}
@@ -32,7 +31,7 @@ void puts_half(char *str)
 	else
 	{
 		len = (j - 1) / 2;
-		for (k = len; k < j; k++)
+		for (k = len; k < j - 1; k++)
 		{
 			_putchar(str[k]);
 		}
