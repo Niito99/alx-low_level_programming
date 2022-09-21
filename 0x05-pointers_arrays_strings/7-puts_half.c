@@ -18,6 +18,8 @@ void puts_half(char *str)
 		j++;
 		i++;
 	}
+	j--;
+
 	if (j % 2 == 0)
 	{
 		len = j / 2;
@@ -25,6 +27,7 @@ void puts_half(char *str)
 		{
 			_putchar(str[k]);
 		}
+		_putchar('\n');
 	}
 	else
 	{
@@ -33,5 +36,6 @@ void puts_half(char *str)
 		{
 			_putchar(str[k]);
 		}
+		_putchar('\n');
 	}
 }
