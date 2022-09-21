@@ -2,6 +2,7 @@
 
 /**
  * _puts - prints a string to the standard output
+ * @str: char passed as param
  * Return: void
  */
 
