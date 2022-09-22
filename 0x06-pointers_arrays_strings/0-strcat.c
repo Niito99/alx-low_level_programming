@@ -7,19 +7,19 @@
  * Return: the pointer to the final value of dest after concatenation
  */
 
-char *_strcat(char *set1, char *set2) /*the function append the second parameter to the first */
+char *_strcat(char *dest, char *src) /*the function append the second parameter to the first */
 {
-    int i = strlen(set1); /* setting the length of each string to the var i and j*/
-    int j = strlen(set2);
+    int i = strlen(dest); /* setting the length of each string to the var i and j*/
+    int j = strlen(src);
     int a;
     int b;
 
     for (a = 0; a <= j; a++)
     {
         b = i + a;
-        *(set1 + b) = set2[a];
+        *(dest + b) = src[a];
     }
 
-    return (set1);
+    return (dest);
 
 }
