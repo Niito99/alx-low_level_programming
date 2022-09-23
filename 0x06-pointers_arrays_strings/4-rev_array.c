@@ -10,13 +10,16 @@
 
 void reverse_array(int *a, int n)
 {
-	int i;
-	int j;
+	int charAc;
+	int j = 0;
+	int i = n - 1;
 
-	j = n - 1;
-
-	for (i = j; i >= 0; i--)
+	while (j <= i)
 	{
-		printf("%d", a[i]);
+		charAc = a[j];
+		a[j] = a[i];
+		a[i] = charAc;
+		i--;
+		j++;
 	}
 }
