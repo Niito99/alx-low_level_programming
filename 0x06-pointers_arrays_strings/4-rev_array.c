@@ -4,15 +4,18 @@
 /**
  * rev_array - reverses the contents of an array of ints
  * @a: the array that would be reversed
- * @b: the number of elements of the array
+ * @n: the number of elements of the array
  * Return: void
  */
 
 void reverse_array(int *a, int n)
 {
 	int i;
+	int j;
 
-	for (i = n - 1; i >= 1; i--)
+	j = n - 1;
+
+	for (i = j; i >= 0; i--)
 	{
 		printf("%d", a[i]);
 	}
