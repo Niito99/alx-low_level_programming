@@ -7,20 +7,13 @@
  * Return: NULL if not found and pointer the
  * first occurence of the character c
  */
-
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-
-	char *p = &c;
-
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
+	do {
+		if (*s == c)
 		{
-			return (char *s[i]);
+			return ((char *)s);
 		}
-		i++;
-	}
+	} while (*s++);
 	return (0);
 }
