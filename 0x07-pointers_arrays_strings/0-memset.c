@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_memset - fills the first n bytes of a memory area
+ * _memset - fills the first n bytes of a memory area
  * by a constant byte b
  * @s: pointer to the memory area
  * @b: the constant byte that fills the memory area
@@ -10,6 +10,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	char *p = s;
+
 	while (n > 0)
 	{
 		*p++ = b;
