@@ -1,4 +1,4 @@
-#include "main.h"i
+#include "main.h"
 /**
  * _strspn - this function gets the legth in bytes
  *
