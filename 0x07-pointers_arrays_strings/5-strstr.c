@@ -52,7 +52,8 @@ char *_strstr(char *haystack, char *needle)
 	}
 	if (k == 0)
 	{
-		return (needle);
+		int num = j - n;
+		return (haystack + num);
 	}
 	return (0);
 }
