@@ -3,9 +3,8 @@
 
 /**
  * print_diagsums -  prints sums
- * @a: a pointer
- * @size: size to print
- * Return: void
+ * @a: a pointer to an int
+ * @size: size of the sums
  */
 void print_diagsums(int *a, int size)
 {
