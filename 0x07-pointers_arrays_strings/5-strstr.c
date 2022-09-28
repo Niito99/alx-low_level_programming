@@ -5,55 +5,25 @@
  * @needle: the string to search for
  * Return: the pointer of the beginning of the located substring
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
-	int j = 0;
-	int l = 0;
-	int m = 0;
-	int n = 0;
+	int i;
+	int j;
 	int k;
-	int match;
 
-	while (needle[i] != '\0')
+	for (i = 0; haystack[i]; i++)
 	{
-		i++;
-	}
-	k = i;
-
-	while (haystack[l] != '\0')
-	{
-		l++;
-	}
-
-	for (j = 0; j > l; j++)
-	{
-		if (needle[n] != '\0')
+		for (k = i, j = 0; needle[j] != '\0'; j++, k++)
 		{
-			if (haystack[j] == needle[n])
+			if (haystack[k] != needle[j] || haystack[k] == '\0')
 			{
-				k--;
-			}
-			else
-			{
-				match = 0;
+				break;
 			}
 		}
-		if (match == 0)
+		if (needle[j] == 0)
 		{
-			n = 0;
-			k = i;
-		}
-		else
-		{
-			n++;
+			return (haystack + i);
 		}
 	}
-	if (k == 0)
-	{
-		int num = j - n;
-		return (haystack + num);
-	}
-	return ('\0');
+	return (0);
 }
