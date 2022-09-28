@@ -55,5 +55,5 @@ char *_strstr(char *haystack, char *needle)
 		int num = j - n;
 		return (haystack + num);
 	}
-	return (0);
+	return ('\0');
 }
