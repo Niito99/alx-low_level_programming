@@ -1,8 +1,6 @@
 #include "main.h"
 /**
  * _sqrt_recursion - finds the sqrt of a number
- * @n: number passed into function as parameter
- * Return: the natural square root of n
  * find_sqrt - checks if a num is a square root
  * @num: the number being checked
  * @root: the root being checked for
