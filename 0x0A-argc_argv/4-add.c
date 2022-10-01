@@ -10,18 +10,20 @@
 int main(int argc, char **argv)
 {
 	int sum = 0;
+
 	int i;
 	int inc;
 
-	if (argc == 1)
+	if (argc == 1 || argc == 2)
 	{
 		printf("0\n");
 	}
-	else if (argc > 1)
+	else if (argc > 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
 			inc = atoi(argv[i]);
+
 			if (inc == 0)
 			{
 				printf("Error\n");
