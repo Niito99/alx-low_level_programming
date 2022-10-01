@@ -12,6 +12,7 @@ int main(int argc, char **argv)
 	int sum = 0;
 
 	int i;
+
 	int inc;
 
 	if (argc == 1 || argc == 2)
@@ -23,7 +24,6 @@ int main(int argc, char **argv)
 		for (i = 1; i < argc; i++)
 		{
 			inc = atoi(argv[i]);
-
 			if (inc == 0)
 			{
 				printf("Error\n");
@@ -36,5 +36,5 @@ int main(int argc, char **argv)
 		}
 		printf("%d\n", sum);
 	}
-	return (0);
+	return (sum);
 }
