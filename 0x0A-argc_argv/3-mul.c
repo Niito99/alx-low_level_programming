@@ -3,7 +3,7 @@
 /**
  * main - multiplies two int
  * @argc: int
- * @arv: vector array
+ * @argv: vector array
  * Return: 0
  */
 
