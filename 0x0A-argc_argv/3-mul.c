@@ -14,6 +14,7 @@ int main(int argc, char **argv)
 	if (argc == 3)
 	{
 		result = atoi(argv[1]) * atoi(argv[2]);
+
 		printf("%d\n", result);
 	}
 	else
@@ -21,5 +22,5 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	return (0);
+	return (1);
 }
