@@ -1,0 +1,1 @@
+This dir in the repository contains code that describe the use of malloc and free; functions for dynamic memory allocation and freeing up space after use of the memoryin the run time of the program. Malloc assigns address from the heap.
