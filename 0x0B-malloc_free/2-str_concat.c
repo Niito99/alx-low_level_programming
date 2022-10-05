@@ -7,45 +7,46 @@
  * Return: the pointer to the concatenated string
  */
 
+
 char *str_concat(char *s1, char *s2)
 {
+	char *x;
+	char n = 'a';
 	int i;
 	int j;
-	int k;
-	int l;
-	int m;
-	char *result;
+	int len1;
+	int len2;
+
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
+	/*calculate first string length*/
+	for (len1 = 0; n; len1++)
+	{
+		n = s1[len1];
+	}
+	/*calculate second string length*/
+	n = 'a';
+	for (len2 = 0; n; len2++)
+	{
+		n = s2[len2];
 	}
 
-	while (s1 != '\0')
+	x = malloc((sizeof(char) * len1 - 1) + (sizeof(char) * len2));
+
+	if (x == NULL)
+		return (NULL);
+	for (i = 0; i + 1 < len1; i++)
 	{
-		i++;
+		x[i] = s1[i];
 	}
-	while (s2 != '\0')
+	for (j = 0; i < (len1 + len2); i++)
 	{
+		x[i] = s2[j];
 		j++;
 	}
-	k = i + j;
-	result = malloc(k * sizeof(char));
-	if (result == NULL)
-	{
-		return (NULL);
-	}
-	for (l = 0; l < i; l++)
-	{
-		result[l] = s1[l];
-	}
-	for (m = 0; m < j; m++)
-	{
-		result[i + m] = s2[m];
-	}
-	return (result);
-
+	return (x);
 }
+
+
