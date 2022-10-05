@@ -22,6 +22,7 @@ char *create_array(unsigned int size, char c)
 	}
 	karat = malloc(size * Sizeof(char));
 	karat[0] = 'f';
-	return (karat);
+	_putchar(karat);
+	free(karat);
 
 }
