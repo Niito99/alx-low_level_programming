@@ -11,6 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *karat;
+	int i = 0;
 
 	if (size == 0)
 	{
@@ -18,7 +19,11 @@ char *create_array(unsigned int size, char c)
 	}
 
 	karat = malloc(size * sizeof(*karat));
-	karat[0] = c;
+	while (i < size)
+	{
+		karat[i] = c;
+		i++;
+	}
 
 	if (karat == NULL)
 	{
@@ -26,7 +31,6 @@ char *create_array(unsigned int size, char c)
 	}
 
 	_putchar(karat);
-	free(karat);
 	return (karat);
 
 
