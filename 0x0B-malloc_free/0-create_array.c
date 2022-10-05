@@ -11,7 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *karat;
-	int i = 0;
+	unsigned int i = 1;
 
 	if (size == 0)
 	{
@@ -19,9 +19,9 @@ char *create_array(unsigned int size, char c)
 	}
 
 	karat = malloc(size * sizeof(*karat));
-	while (i < size)
+	while (i < size + 1)
 	{
-		karat[i] = c;
+		karat[i - 1] = c;
 		i++;
 	}
 
