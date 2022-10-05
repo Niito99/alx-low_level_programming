@@ -16,13 +16,18 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+
+	karat = malloc(size * sizeof(*karat));
+	karat[0] = c;
+
 	if (karat == NULL)
 	{
 		return (NULL);
 	}
-	karat = malloc(size * sizeof(*karat));
-	karat[0] = 'f';
+
 	_putchar(karat);
 	free(karat);
+	return (karat);
+
 
 }
