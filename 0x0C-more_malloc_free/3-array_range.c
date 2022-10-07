@@ -12,6 +12,7 @@ int *array_range(int min, int max)
 {
 	int *list;
 	int i;
+
 	int x = min;
 
 	if (min > max)
