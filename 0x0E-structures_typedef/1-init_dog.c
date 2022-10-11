@@ -7,7 +7,7 @@
  * @name: name to be initialised to the data structure
  * @age: the int value to init the age
  * @owner: the name of the owner
- * @dog: struct name
+ * dog - struct name
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
