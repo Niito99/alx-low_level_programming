@@ -1,3 +1,6 @@
+#ifndef _dog_h_
+#define _dog_h_
+
 /**
  * struct dog - creates a structure of a dog
  * @name: the first member that stores the name of dog in char
@@ -15,3 +18,5 @@ struct dog
 
 	char *owner;
 };
+
+#endif
