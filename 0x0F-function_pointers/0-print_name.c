@@ -1,0 +1,18 @@
+#include "function_pointers.h"
+
+/**
+ * print_name - prints a name
+ * @name: name of person
+ * @f: pointer to a function
+ * Return: void
+ */
+
+void print_name(char *name, void (*f)(char *))
+{
+	void (*n)(char *);
+
+	if (!f || !name)
+		return;
+	n = f;
+	(*n)(name);
+}
