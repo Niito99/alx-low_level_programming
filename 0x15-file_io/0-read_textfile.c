@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	count = read(fd, buf, letters); /* the file descriptor is used to read the content of the file into a buffer buf */
 
 	buf[letters] = '\0';
-	value = write(STDOUT_FILENO, buf, letters); /* write the buffer to standard output */
+	value = write(STDOUT_FILENO, buf, count); /* write the buffer to standard output */
 
 	if (count == -1 || value == -1 ||fd == -1)
 	{
